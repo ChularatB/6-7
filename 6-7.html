@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        .color{
+            color: green;
+        }
+    </style>
+    <script>
+        function changcolor() {
+            var name = document.getElementById("name");
+            var age = document.getElementById("age");
+            var bd = document.getElementById("BD");
+            name.className = "color";
+            age.className = "color";
+            bd.className = "color";
+        }
+    </script>
+</head>
+
+<body>
+    Name: <input type="text" id="name" onmouseleave="changcolor()"><br>
+    Age: <input type="text" id="age" pattern="0-9" onmouseleave="changcolor()"><br>
+   Birthdate: <input type="text" id="BD" onmouseleave="changcolor()"><br>
+</body>
+
+</html>
